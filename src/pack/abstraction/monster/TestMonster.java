@@ -20,7 +20,8 @@ public class TestMonster {
 		m1 = new StoneMonster("a2b2"); // upcast
 		System.out.println(m1.attack()); // Run StoneMonster&#39;s attack()
 		// We have a problem here!!!
-		Monster m4 = new Monster("u2u2");
+		Monster m4 = new Monster("u2u2") {
+		};
 		//Monster m4 = new Monster("u2u2");
 		System.out.println(m4.attack()); // garbage!!!
 		

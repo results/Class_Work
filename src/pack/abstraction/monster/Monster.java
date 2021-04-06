@@ -6,7 +6,7 @@ package pack.abstraction.monster;
  * @author John Fink
  *
  */
-public class Monster {
+public abstract class Monster {
 	
 	
 	protected Monster(String name) {
