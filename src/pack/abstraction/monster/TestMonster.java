@@ -1,8 +1,8 @@
-package pack.abstraction;
+package pack.abstraction.monster;
 
-import pack.abstraction.impl.FireMonster;
-import pack.abstraction.impl.StoneMonster;
-import pack.abstraction.impl.WaterMonster;
+import pack.abstraction.monster.impl.FireMonster;
+import pack.abstraction.monster.impl.StoneMonster;
+import pack.abstraction.monster.impl.WaterMonster;
 
 public class TestMonster {
 	
@@ -20,8 +20,7 @@ public class TestMonster {
 		m1 = new StoneMonster("a2b2"); // upcast
 		System.out.println(m1.attack()); // Run StoneMonster&#39;s attack()
 		// We have a problem here!!!
-		Monster m4 = new Monster("u2u2") {
-		};
+		Monster m4 = new Monster("u2u2");
 		//Monster m4 = new Monster("u2u2");
 		System.out.println(m4.attack()); // garbage!!!
 		

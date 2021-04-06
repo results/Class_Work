@@ -1,6 +1,6 @@
-package pack.abstraction.impl;
+package pack.abstraction.monster.impl;
 
-import pack.abstraction.Monster;
+import pack.abstraction.monster.Monster;
 
 /**
  * Core Java - Exercise - OOP - Creating a Monster 

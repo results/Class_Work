@@ -1,4 +1,4 @@
-package pack.abstraction;
+package pack.abstraction.monster;
 
 
 /**
@@ -6,7 +6,7 @@ package pack.abstraction;
  * @author John Fink
  *
  */
-public abstract class Monster {
+public class Monster {
 	
 	
 	protected Monster(String name) {

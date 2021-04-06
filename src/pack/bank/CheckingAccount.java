@@ -1,48 +1,53 @@
 package pack.bank;
 
-public class CheckingAccount {
+import java.util.Random;
+
+public class CheckingAccount extends BankAccount {
 	
-	private int accountID;
-	private double currentBal;
+	private static final String TYPE = "Checking";
 	
-	public CheckingAccount(int accountID, double currentBal) {
-		super();
-		this.accountID = accountID;
-		this.currentBal = currentBal;
-	}
-
-	public int getAccountID() {
-		return accountID;
-	}
-
-	public void setAccountID(int accountID) {
-		this.accountID = accountID;
-	}
-
-	public double getCurrentBal() {
-		return currentBal;
-	}
-
-	public void setCurrentBal(double currentBal) {
-		this.currentBal = currentBal;
+	@Override
+	public String getType() {
+		return TYPE;
 	}
 	
+	public CheckingAccount() {
+		
+	}
+	
+
+	@Override
 	public void addDeposit(double deposit) {
 		this.setCurrentBal(this.getCurrentBal()+deposit);
+		System.out.println(deposit+" sucessfully deposited to "+getType()+" account.");
 	}
 	
+	@Override
 	public void addWithdraw(double withdraw) {
 		this.setCurrentBal(this.getCurrentBal()-withdraw);
+		System.out.println(withdraw+" sucessfully withdrawn from "+getType()+" account.");
 	}
 	
-	public void addFromSavings(SavingsAccount savings, double amount) {
-		savings.addWithdraw(amount);
-		this.addDeposit(amount);
+	@Override
+	public void createAccount(double openingBal) {
+		this.setAccountID(new Random().nextInt(999999999));
+		this.setCurrentBal(openingBal);
+		System.out.println(getType()+" Account Created: #"+this.getAccountID()+" with bal "+this.getCurrentBal());
 	}
+
+	@Override
+	public void printBalance() {
+		System.out.println(getType()+" Account #"+this.getAccountID()+" with bal "+this.getCurrentBal());
+	}
+
+	@Override
+	public void transfer(BankAccount toAccount,double amt) {
+		this.setCurrentBal(this.getCurrentBal()-amt);
+		toAccount.setCurrentBal(toAccount.getCurrentBal()+amt);
+		System.out.println("Succesfully transferred "+amt+" from "+getType()+" to "+toAccount.getType()+" #"+toAccount.getAccountID()+"");
+	}
+
 	
-	public void withdrawToSavings(SavingsAccount savings, double amount) {
-		this.addWithdraw(amount);
-		savings.addDeposit(amount);
-	}
+
 
 }
