@@ -1,0 +1,39 @@
+Monday	4/19/2021	Core Programming (Java)	
+Advanced Core Java - Concurrency-2
+
+Advanced Core Java - Exercise - Concurrency 	
+Tuesday	4/20/2021	
+Advanced Core Java - Basic IO
+
+Advanced Core Java - Intermediate IO
+
+Advanced Core Java - Advanced IO
+
+AD - KBA - Advanced Java 
+
+AD- SBA - Core Programming (Java) 
+
+Wednesday	4/21/2021	JDBC, ORM, and Unit Testing	
+JDBC - Intro to JDBC (Links to an external site.)
+
+JDBC - Applying OOP to JDBC
+
+Thursday	4/22/2021	
+ORM - Java Persistence API-1 (Links to an external site.)
+
+JPA Mapping hands-on activity (Links to an external site.) 
+
+JPQL hands-on activity (Links to an external site.)
+
+Friday	4/23/2021	
+ Independent work or assessments
+
+Professional Development - 1 PM ET - 4 PM ET
+
+Meeting with TEK Recruiters
+
+Technical Resume Review (TEK) Session
+
+1:1 coaching based on conversation w/TEK
+
+Afternoon Session
