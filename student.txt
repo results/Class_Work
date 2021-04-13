@@ -1,0 +1,4 @@
+Student Name: doggo
+Student ID: 199
+Student Course: walk
+Student GPA: 1.0
