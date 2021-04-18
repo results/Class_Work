@@ -13,8 +13,8 @@ public class MainEntry {
 	public static void maths() {
 		switch (getInput("Please enter math operation: + - * /")) {
 		case "+":
-			ICalc add = (values) -> {
-				int sum = 0;
+			ICalc add = values -> {
+				double sum = 0;
 				for(int toAdd : values) {
 					sum += toAdd;
 				}
@@ -23,8 +23,8 @@ public class MainEntry {
 			System.out.println(add.compute(getValues(4)));
 		break;
 		case "-":
-			ICalc sub = (values) -> {
-				int sum = 0;
+			ICalc sub = values -> {
+				double sum = 0;
 				for(int toSub : values) {
 					sum -= toSub;
 				}
@@ -33,8 +33,8 @@ public class MainEntry {
 			System.out.println(sub.compute(getValues(4)));
 		break;
 		case "*":
-			ICalc multi = (values) -> {
-				int mult = 0;
+			ICalc multi = values -> {
+				double mult = 0;
 				for(int i = 0; i < values.length; i++) {
 					if(i == 0) {
 						mult = values[i];
@@ -47,8 +47,8 @@ public class MainEntry {
 			System.out.println(multi.compute(getValues(4)));
 		break;
 		case "/":
-			ICalc divide = (values) -> {
-				int div = 0;
+			ICalc divide = values -> {
+				double div = 0;
 				for(int i = 0; i < values.length; i++) {
 					if(i == 0) {
 						div =  values[i];
