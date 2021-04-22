@@ -18,4 +18,9 @@ public class ThreadDemo {
 		System.out.println("Program end");
 	}
 
+	Thread thread = new Thread(new Runnable() {
+	    @Override
+	    public void run(){
+	    }
+	});
 }
